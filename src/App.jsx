@@ -1,12 +1,11 @@
 import './App.css'
-import News from './components/News/news'
+import Home from './components/Home/home'
 
 function App() {
 
   return (
     <>
-      <h1>Health News app</h1>
-      <News />
+      <Home />
     </>
   )
 }

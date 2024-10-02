@@ -1,0 +1,106 @@
+.navbar {
+  /* min-height: 20px; */
+  padding: 20px 30px;
+  background-color: #191919aa;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  width: 100vw;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  left: 0;
+
+  .navs {
+    border: 1px solid #595641;
+    background-color: #59564133;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    a {
+      color: #fefefe;
+      transition: color 350ms ease;
+      &:hover {
+        color: #f09e00;
+      }
+    }
+
+    
+  }
+
+  .hamburger {
+    text-align: right;
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+      span {
+        height: 3px;
+        width: 25px;
+        background-color: #fff;
+        margin: 5px 0;
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover span {
+        background-color: #f09e00;
+      }
+    }
+    .overlay {
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        top: 0;
+        left: 0;
+        z-index: 1000000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .overlay.open {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .overlay-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        a {
+            color: #fefefe;
+            font-size: 36px;
+            padding: 10px;
+            text-decoration: none;
+            transition: color 350ms ease;
+
+            &:hover {
+                color: #f09e00;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .navs {
+            display: none; /* Hide the navs on mobile */
+        }
+
+        .hamburger {
+            display: flex; /* (Show the hamburger on mobile */
+        }
+    }
+}
