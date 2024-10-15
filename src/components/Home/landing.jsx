@@ -1,9 +1,20 @@
+import myImage from '../../assets/images/desktop-circle.png';
+
+
 function Landing() {
   return (
     <div className="landing">
-      <div className="circle">
+      {/* <div className="circle">
+
+        
         <p className="quote">{"If you want to go fast, go alone. If you want to go far, go together."}</p>
         <p className="qby">—African Proverb</p>
+      </div> */}
+        <div className="bg-circle">
+        <p className="quote">
+          {"If you want to go fast, go alone. If you want to go far, go together."}
+        </p>
+        <p className="qby">— African Proverb</p>
       </div>
       <div className="content">
         <h1>Aarogplus</h1>
