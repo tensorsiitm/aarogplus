@@ -21,6 +21,9 @@ function Contact() {
                 <h3>Chennai - 600 002</h3>
             </div>
         </div>
+        {
+        // TODO: Add links properly
+        }
         <div className="links">
             <i><WhatsappIcon fontSize="large" /></i>
             <i><FBIcon fontSize="large"/></i>

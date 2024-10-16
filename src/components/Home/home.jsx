@@ -15,7 +15,7 @@ function Home() {
     <div className='home'>
       <Navbar />
       <Landing />
-      <div className='vision'>
+      <div className='vision' id='vision'>
         <h1>Vision</h1>
         <p>To be a catalyst for innovation by empowering startups and emerging technologies to realize their full potential. We envision a future where groundbreaking ideas are nurtured into sustainable ventures that positively impact industries and improve lives globally.</p>
       </div>

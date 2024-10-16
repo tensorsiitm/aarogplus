@@ -1,6 +1,9 @@
 function Landing() {
   return (
     <div className="landing">
+      {
+        // TODO: proverb not working properly
+      }
       <div className="circle">
         <p className="quote">{"If you want to go fast, go alone. If you want to go far, go together."}</p>
         <p className="qby">—African Proverb</p>
