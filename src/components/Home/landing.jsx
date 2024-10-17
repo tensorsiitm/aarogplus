@@ -1,4 +1,4 @@
-import myImage from '../../assets/images/desktop-circle.png';
+// import myImage from '../../assets/images/desktop-circle.png';
 
 
 function Landing() {
